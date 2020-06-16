@@ -157,3 +157,9 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 - How well is the robot able to stay on the white line when turning
 
 ## Test cases - Completion
+
+- Robot needs to detect white line rather than just white pixel as the images have a white background
+- Robot needs to determine which way to go when there are two directions that the robot could go too
+- If the robot goes the wrong direction and hits a deadend, how does it know to turn around?
+- Second half of the maze, they are missing a white pixel where the lines don't quite meet at the corners. Making sure that the robot does not go off track.
+- Right angled corners instead of curvy lines
