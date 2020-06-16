@@ -33,6 +33,19 @@ How well does the robot follow the white line? Is it constantly correcting itsel
 |Robot travelling on diagonal white lines|Robot must successfully travel on the maze’s diagonal white lines.|  |
 |Robot travelling on vertical lines|Robot must successfully travel on the maze’s vertical white lines.|  |
 
+### Michael
+
+What to do when the Robot only has a partial view of the white line:
+
+This test case will provide a situation and possible solution. The situation is what should the robot do when the whit line is in its view but not through the centre row.
+
+If the white line is located in the bottom half of the viewpoint then the robot should turn towards it, i.e, if it is in the bottom left, turn left, if it is in the bottom right, turn right. This will result in the white line approaching the middle of the viewpoint vertically. As the robot turns it can check if the white line is in the centre pixels of the centre row and when it is the robot will be on track.
+
+If the white line is located in the top half of the viewpoint the robot should turn towards it, i.e, if it is top left, turn left, top right, turn right. This will result in the robot being perpendicular to the white line. The robot should continue to turn until the white line is in the same row of pixels in the left hand side check column as the right hand side check column, when this is true the robot will be exactly perpendicular to the white line, it can then approach the white line until it fills the entire middle row of the view point, move forward x amount and perform a right angled turn, this will put the robot back onto the line perfectly, hopefully.
+
+Issues that arise with this test case are:
+that when the white line is in the bottom of the screen and the robot turns towards it, the white line may reach perpendicular to the centre check row but is not in the centre, the robot will need to correct itself at this point.
+When the line is in the top half of the screen and the robot turns until it fills the centre check row, we will have to manually test how far the robot should move forward before turning 90 degrees otherwise the white line will not be in the centre of the screen.
 
 
 
