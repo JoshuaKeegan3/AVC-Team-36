@@ -154,7 +154,7 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 - Robot finds a way to intersect obstacles
 - Robot stops when it detects flag
 - How good is the robot able to detect the white line and follow it
-- How well is the robot able to stay on the white line when turning
+- How well does the robot follow the white line? Is it constantly correcting itself?
 
 ## Test cases - Completion
 
