@@ -1,0 +1,21 @@
+Test Case ENGR101 Assignment 3
+How well does the Robot find the white line
+
+|Test Case ID|Test Case Scenario|Test Case Description|Expected Outcome|Actual Outcome|Test Case Status|
+|------------|------------------|---------------------|----------------|--------------|----------------|
+|01|Finds White Line|How well does the Robot find the white line at speed 5|Robot moves slowly in a smooth curve towards the white|The robot turns acutely from left to right and back until it has moved forward enough for the white line goes through the bottom row|❌|
+|02|Finds White Line|How well does the Robot find the white line at speed 10|Robot moves slowly in a smooth curve towards the white|The robot turns acutely from left to right and back until it has moved forward enough for the white line goes through the bottom row|❌|
+Finds White Line|How well does the Robot find the white line at speed 20|Robot moves slowly in a smooth curve towards the white|The robot still turn left and right and back but at this speed it quickly finds the white line|✔️|
+Finds White Line|How well does the Robot find the white line at speed 30|Robot moves slowly in a smooth curve towards the white|Does what is expected at a sufficient rate and follows the line without any problems|✔️|
+Finds White Line|How well does the Robot find the white line at speed 40|Robot moves slowly in a smooth curve towards the white|Does what is expected but the speed makes the robot loose sight of the white line later in the maze|✔️|
+Finds White Line|How well does the Robot find the white line at speed 50|Robot moves slowly in a smooth curve towards the white|Does what is expected but the speed makes the robot slightly over shoot the white line causing it to need to over correct itself|✔️|
+Finds White Line|How well does the Robot find the white line at speed 60|Robot moves slowly in a smooth curve towards the white|Does what is expected but the speed makes the robot slightly over shoot the white line causing it to need to over correct itself|✔️|
+Finds White Line|How well does the Robot find the white line at speed 70|Robot moves slowly in a smooth curve towards the white|The robot far overshoots the line multiple times and never finds its way onto the track and never finishes|❌|
+
+Conclusion: The code performs as expected when the robot is moving at speed between 20 and 60, 30 is the optimal speed from testing as the robot experiences the least amount of trouble following the line after finding it.
+
+
+
+
+
+
