@@ -147,7 +147,7 @@ int main(){
 	}
     double vLeft = 5.0;
     double vRight = 5.0;
-    double speed = 2000.0; //30
+    double speed = 30.0; //30
     takePicture();
     SavePPMFile("i0.ppm",cameraView);
     bool curr_maze_mode=false;
