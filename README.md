@@ -91,11 +91,11 @@ Watch the robot do it's thing
 
 | Hand-ins | Date | Course mark |
 |----------|------|-------------|
-| Plan | Thurs 4th May | |
-| Code due | Fri 19th May | 5%|
-| Team Log | Wed 24th May | 5% |
-| Individual Log | Wed 24th May  | 5% |
-| Group Log Report | Wed 24th May  | 5% |
+| Plan | Thurs 4th June | |
+| Code due | Fri 19th June | 5%|
+| Team Log | Wed 24th June | 5% |
+| Individual Log | Wed 24th June | 5% |
+| Group Log Report | Wed 24th June  | 5% |
 
 ### Interferances to note
 | Conflicts | Due Date | 
@@ -120,21 +120,21 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 | Date | Agenda | What we want to accomplish |
 |----------|------|-------------|
 | ENGR101 lectures | | Jasmine is in charge of asking any questions on behalf of the group |
-| Tues 26th April | GitHub | Josh set up project repository |
-| Sun 31st April | Group met via zoom | Get to know each other |
-| Tues 2nd May | Plan discussion | Install SFML on our devices so we are ready to start |
-| Wed 3rd May | ENGR101 Lecture | Jasmine asks any questions with Arthur |
-| Fri 5th May | Do core code | Writing core code and write Core test cases |
-| Sun 7th May | Check on core code | Gives time to test and debug code for next meeting. Finished Core test cases ready for code completion|
-| Tues 9th May | Completion discussion | Finalise core code and start completion code and write Completion test cases |
-| Fri 12th May | Check on completion code | Gives time to test and debug code for next meeting. Finished Completion test cases ready for challenge code |
-| Sun 14th May | Challenge discussion | Finalise completion code and start challenge code and writing Challenge test cases |
-| Tues 16th May | Update on challenge | Should be near the end of the coding progress. Finished Challenge test cases|
-| Thur 18th May | Double check code | Make sure code works and is ready for hand-in the following day |
-| Fri 19th May | CODE DUE | Make sure code is submitted |
-| Fri 19th May | Report discussion | Discuss report with group and recap logs (team and individual) |
-| Tues 23rd May | Finalise report | Check that report is done and logs are finished |
-| Wed 24th May | REPORT DUE | Make sure all report and logs are submitted - PROJECT DONE! |
+| Tues 26th May | GitHub | Josh set up project repository |
+| Sun 31st May | Group met via zoom | Get to know each other |
+| Tues 2nd June | Plan discussion | Install SFML on our devices so we are ready to start |
+| Wed 3rd June | ENGR101 Lecture | Jasmine asks any questions with Arthur |
+| Fri 5th June | Do core code | Writing core code and write Core test cases |
+| Sun 7th June | Check on core code | Gives time to test and debug code for next meeting. Finished Core test cases ready for code completion|
+| Tues 9th June | Completion discussion | Finalise core code and start completion code and write Completion test cases |
+| Fri 12th June | Check on completion code | Gives time to test and debug code for next meeting. Finished Completion test cases ready for challenge code |
+| Sun 14th June | Challenge discussion | Finalise completion code and start challenge code and writing Challenge test cases |
+| Tues 16th June | Update on challenge | Should be near the end of the coding progress. Finished Challenge test cases|
+| Thur 18th June | Double check code | Make sure code works and is ready for hand-in the following day |
+| Fri 19th June | CODE DUE | Make sure code is submitted |
+| Fri 19th June | Report discussion | Discuss report with group and recap logs (team and individual) |
+| Tues 23rd June | Finalise report | Check that report is done and logs are finished |
+| Wed 24th June | REPORT DUE | Make sure all report and logs are submitted - PROJECT DONE! |
 
 ## Project Log - Wiki
 
@@ -146,8 +146,10 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 | Log 4 | Tuesday 9th June | |
 | Log 5 | Thursday 11 June | |
 | Log 6 | Monday 15 June | General Update |
+| Log 7 | Tuesday 16 June |
+| Log 8 | Thursday 18 June |
 
-## Test cases - Core
+## Exploring possible test cases - Core
 
 - If robot has an obstacle in sight, finds a way to avoid it and change direction
 - How the robot changes direction, successfully able to keep speed when turning
@@ -156,10 +158,21 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 - How good is the robot able to detect the white line and follow it
 - How well does the robot follow the white line? Is it constantly correcting itself?
 
-## Test cases - Completion
+## Exploring possible test cases - Completion
 
 - Robot needs to detect white line rather than just white pixel as the images have a white background
 - Robot needs to determine which way to go when there are two directions that the robot could go too
 - If the robot goes the wrong direction and hits a deadend, how does it know to turn around?
 - Second half of the maze, they are missing a white pixel where the lines don't quite meet at the corners. Making sure that the robot does not go off track.
 - Right angled corners instead of curvy lines
+
+## Exploring possible test cases - Challenge
+
+- Challenge has no white line and therefore, we aren't able to detect white pixels anymore
+- There are a number of corners where the robot has to turn
+- How accurate can we get the robot to turn, because if it is slightly off, the robot might get stuck at a wall
+- How can we keep the robot at the centre of the maze as there is no line to follow?
+- Again, making sure the robot stops when it detects the flag
+
+
+
