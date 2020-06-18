@@ -78,9 +78,10 @@ Note this is a team timeline and the Invidvidual Report will have to be complete
 ## Test cases
 |Test Case Id|Test Case Scenario| Test Case Description | Expected Outcome | Actual Outcome | Tese Case Status | 
 |------------|------------------| --------------------- | -----------------| -------------- | ---------------- | 
-| **Core-01** |Robot with clear route| Robot doesn't come across any obstacle | Robot should move from source to destination without any break| - | Not executed |  
-| **Core-02** |Robot approaches to finishing flag | Robot must stop when it is reaches to its final destination, it should not keep hitting the flag| Robot stops when it reaches to its final destination| - | Not executed |
-| **Comp-01** |Robot gets obstacle on its route| Robots gets any statioanary object in its scanning area | Robot should stop if hits any obstacle | - | Not executed |
-| **Comp-02** |Robots behaviour on turns _(without any obstacle)_| Robot gets turns (left or right) on its route | 1. Robot should be able to manage its speed to make sure it is not losing its track. <br/> 2. when robot passes though left or right turns then it should not derail itself from the white line.|-| Not executed | 
-| **Comp-03** |Duck crossing the path | Duck intersects the  Robot's route when it is moving towards its destination  | Robot should stop and wait for duck to cross the route and clear its way| - | Not executed | 
-
+| **Core-01** |Robot with clear route| Robot doesn't come across any obstacle | Robot should move from source to destination without any break| Robot has moved from source to destination as expected | Pass |
+| **Core-02** |Robot with clear route and follows white line| Robot doesn't come across any obstacle | Robot should move from source to destination without any break and it must follow the white line| Robot moves away from the white line around corners while making turns| Failed |
+| **Core-03** |Robot approaches to finishing flag | Robot must stop when it is reaches to its final destination, it should not keep hitting the flag| Robot stops when it reaches to its final destination| Robot reaches to the finishing flag and then it turns back and started going back to the source | Fail |
+| **Comp-01** |Robot gets obstacle on its route| Robots gets any statioanary object in its scanning area | Robot should stop if hits any obstacle | Robot stops when it approaches to the stationary object | Pass |
+| **Comp-02** |Robots behaviour on turns _(without any obstacle)_| Robot gets turns (left or right) on its route | 1. Robot should be able to manage its speed to make sure it is not losing its track. <br/> 2. when robot passes though left or right turns then it should not derail itself from the white line.|Robot derails itself on the corners | Fail | 
+| **Comp-03** |Duck crossing the path | Duck intersects the  Robot's route when it is moving towards its destination  | Robot should stop and wait for duck to cross the route and clear its way| Robot stops and waits for duck to cross the path | Pass | 
+| **Comp-04** |Robot approaches to finishing flag | Robot must stop when it is reaches to its final destination, it should not keep hitting the flag| Robot stops when it reaches to its final destination| Robot reaches to the finishing flag and it stops at the end.| Pass |
