@@ -31,13 +31,14 @@ Installing SFML on OSX
 The first step is to install home brew. To Install home-brew there are a few methods. The first is via terminal. There are two ways you can find the terminal.
 1) Command(⌘) + spacebar(⎵) can be used to open spotlight search. This will be a search bar appearing in the centre of you screen. Type "terminal" in it. Click the first thing
 
-Image
+![alt text](https://i.insider.com/5cd9cf94021b4c2bdf40fca8?width=1300&format=jpeg&auto=webp)
 
 2) The terminal can also be found in /Applications/Utilities/ folder. 
+![alt text](https://i.insider.com/5cd9cf2e021b4c2cbb3054e8?width=1300&format=jpeg&auto=webp)
+![alt text](https://i.insider.com/5cd9cf45021b4c2bc81bcd13?width=1300&format=jpeg&auto=webp)
 
 3) Terminal is possible to be found by opening the launchpad found on the Mac quick bar at the bottom of your desktop.
-
-Image
+![alt text](https://media.idownloadblog.com/wp-content/uploads/2019/04/Open-Terminal-from-Launchpad-Other.jpg)
 
 After opening terminal paste the following command into a single terminal line and press enter(return)
 ```
@@ -55,7 +56,7 @@ brew install sfml
 
 After installing sfml, you can install this project from GitHub. Go to the top of the home page of the repository and click the green button on the right that says "Clone or download". Then click download zip.
 
-Image
+![alt text](https://i.stack.imgur.com/gL9dG.png)
 
 On Mac simply double clicking the zip file will extract it. You can then save the extracted folder wherever you want.
 
@@ -64,7 +65,7 @@ On Mac open the file and open the AVC_Mac folder and then the AVC_robot file. Th
 Go to build -> set build commands
 Under the header "cpp commands" click the box beside "build" 
 
-Image
+![alt text](https://mfragin.files.wordpress.com/2015/12/setbuildcommands.png?w=1108)
 
 Paste the following flags (text) at the end of the flags (text) that is already there.
 
@@ -77,7 +78,7 @@ Paste the following flags (text) at the end of the flags (text) that is already 
 g++ -Wall -o "%e" "%f" -lsfml-graphics -lsfml-window -lsfml-system -lsfml-network 
 ```
 
-Open go back into the folder where you were before and open server3.cpp in Geany 
+Open go back into the folder where before. Go back a directory and click on robot_server and open server3.cpp in Geany.
 
 On Mac press **fn+f8**, **fn+f9**, **fn+f5**
 A terminal should open don't close it
